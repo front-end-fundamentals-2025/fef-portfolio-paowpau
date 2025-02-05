@@ -1,4 +1,4 @@
-const projectCards = document.querySelectorAll('.project-card');
+let projectCards = document.querySelectorAll('.project-card');
 
 projectCards.forEach(card => {
     card.addEventListener('click', function() {
