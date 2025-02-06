@@ -9,35 +9,38 @@
 <body>
     <header>
         <h1>Contact Me</h1>
-            <nav>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="project.html">Projects</a></li>
-            </nav>
+        <nav>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="project.html">Projects</a></li>
+        </nav>
     </header>
     <main>
         <section>
-            <h2>Get in Touch</h2 >
-            <form action="#" method="POST">
+            <h2>Get in Touch</h2>
+            <form id="contact-form">
                 <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" required>
     
                 <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" required>
     
                 <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <textarea id="message" required></textarea>
     
                 <button type="submit">Send Message</button> 
             </form>
+
+            <div id="confirmation-message" class="hidden">
+                <h2>Thank you for your message!</h2>
+                <p>We'll get back to you soon.</p>
+            </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 Paulina. All rights reserved.</p>
-        <!-- 
-    Source: HubSpot Blog - HTML Code Copyright
-    Link: https://blog.hubspot.com/website/html-code-copyright
--->
-</footer>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
